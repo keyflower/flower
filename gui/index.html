@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Web-Site para Fãs de Formula 1</title>
+    <!-- Adicione o link do Bootstrap Icons no <head> se ainda não estiver -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+</head>
+<body>
+    <!-- Sidebar de funções -->
+    <div id="sidebar" class="sidebar">
+        <span class="closebtn" id="closeSidebar">&times;</span>
+        <a href="../corpo/perfil_de_guizin.html">
+            <i class="bi bi-person-circle"></i> Meu Perfil
+        </a>
+        <a href="../corpo/configuracoes.html">
+            <i class="bi bi-gear-fill"></i> Configurações
+        </a>
+        <a href="#">
+            <i class="bi bi-question-circle-fill"></i> Ajuda
+        </a>
+        <div class="submenu-container">
+            <a href="#" class="aba" id="contatoBtn">
+                <i class="bi bi-telephone-fill"></i> Contato
+            </a>
+            <div class="submenu" id="submenuContato">
+                <a href="mailto:guizinvo776@gmail.com">
+                    <i class="bi bi-envelope-fill"></i> E-mail
+                </a>
+                <a href="https://wa.me/5588994504456" target="_blank">
+                    <i class="bi bi-whatsapp"></i> WhatsApp
+                </a>
+            </div>
+        </div>
+        <!-- Adicione mais funções aqui -->
+    </div>
+    <div class="vector-her-container">
+        <header class="vector-header mw-header no-font-mode-scale">
+            <div class="vector-header-start">
+                <nav class="vector-user-links vector-user-links-wide" aria-label="Ferramentas pessoais">
+                    
+                </nav>
+            </div>
+        </header>
+    </div>
+    <div class="main-container">
+        <header>
+            <nav>
+                <a class="profile-link" href="#" title="Funções" id="openSidebar" style="display: flex; align-items: center; justify-content: flex-end;">
+                    <i class="bi bi-list" style="font-size: 2rem;"></i>
+                </a>
+            </nav>
+            <h1>Bem-vindo à Página Dedicada para Fãs de F1!</h1>
+        </header>
+        <hr>
+        <center>
+            <section class="intro">
+                <h1>História</h1>
+                <p style="font-size: 15px;">
+                    A história da Fórmula 1 tem início com as competições de Grandes Prêmios disputadas na Europa, no início do século XX. Apenas durante a Segunda Guerra Mundial, houve uma pausa. As competições de Grande Prêmio recomeçaram logo após o fim do conflito, em 9 de Setembro de 1945, prosseguindo até a atualidade, sem interrupções.
+                </p>
+            </section>
+        </center>
+        <section class="main-image">
+            <img src="https://i.pinimg.com/1200x/fc/fc/a1/fcfca175f30508f4290a3d9c3c8d2a1b.jpg" alt="Jesus Cristo nas nuvens">
+        </section>
+        <footer>
+            <h2>Agradeço por visitar!</h2>
+        </footer>
+    </div>
+    <script>
+    // Abrir a sidebar
+    document.getElementById('openSidebar').onclick = function(e) {
+        e.preventDefault();
+        document.getElementById('sidebar').style.width = '260px';
+    };
+    // Fechar a sidebar
+    document.getElementById('closeSidebar').onclick = function() {
+        document.getElementById('sidebar').style.width = '0';
+    };
+    // Fechar clicando fora da sidebar
+    window.onclick = function(event) {
+        const sidebar = document.getElementById('sidebar');
+        if (event.target === sidebar) {
+            sidebar.style.width = '0';
+        }
+
+    };
+
+    // Submenu Contato
+    document.getElementById('contatoBtn').onclick = function(e) {
+        e.preventDefault();
+        const submenu = document.getElementById('submenuContato');
+        submenu.style.display = submenu.style.display === 'block' ? 'none' : 'block';
+    };
+    </script>
+
+
+</body>
+</html>
