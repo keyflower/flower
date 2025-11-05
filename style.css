@@ -1,0 +1,135 @@
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: linear-gradient(135deg, #f3b0f2 0%, #fdf5b9 100%);
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+}
+
+img {
+    height: 170px;
+    width: 170px;
+}
+
+p {
+    text-align: center;
+}
+
+.profile-container {
+    width: 600px;
+    height: 780px;
+    margin: 40px auto;
+    background: #FFFFFF;
+    border-radius: 18px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+    padding: 32px 24px;
+    transition: all 0.3s ease;
+    
+}
+
+.novaClasse {
+    display: flex; flex-direction: column
+}
+.expandir {
+    width: 900px;
+    height: 780px;
+    background-color: #FFFFFF;
+    transition: all 0.3s ease;
+}
+
+.profile-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile-header img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 4px solid #f3b0f2;
+;
+    margin-bottom: 16px;
+}
+
+.profile-header h1 {
+    margin: 0;
+    font-size: 2.2rem;
+    color: #333;
+}
+
+.profile-role {
+    color: #f3b0f2;
+;
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+hr {
+    border: none;
+    border-top: 2px solid #e0e0e0;
+    margin: 24px 0;
+}
+
+.profile-bio {
+    color: #444;
+    font-size: 1.08rem;
+    line-height: 1.7;
+    margin-bottom: 24px;
+}
+
+.profile-bio ul {
+    margin-top: 16px;
+    padding-left: 20px;
+}
+
+.profile-gallery {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.profile-gallery img {
+    width: 120px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+    transition: transform 0.2s;
+}
+
+.profile-gallery img:hover {
+    transform: scale(1.07);
+}
+
+@media (max-width: 700px) {
+    .profile-container {
+        padding: 16px 4px;
+    }
+    .profile-gallery img {
+        width: 90px;
+        height: 60px;
+    }
+}
+
+.back-button-fixed {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 3000;
+    padding: 10px 20px;
+    background: #4a90e2;
+    color: #fff;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    transition: background 0.2s;
+}
+.back-button-fixed:hover {
+    background: #357ab8;
+}

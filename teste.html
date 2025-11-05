@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> 𖹭๋ ࣭ ⭑ </title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="profile-container">
+        <button>Entrar</button>
+    </div>
+    <script>
+        btn = document.querySelector('button')
+        divBox =  document.querySelector('div')
+        btn.addEventListener('click', () => {
+           content = `
+           <header class="profile-header">
+           <img src="https://p16-sign-va.tiktokcdn.com/tos-maliva-avt-0068/b0b2e3629e0d6036f8080b855a139820~tplv-tiktokx-cropcenter:1080:1080.jpeg?dr=14579&refresh_token=e268a119&x-expires=1762340400&x-signature=%2BvyEuz8k6gAWpZsWh7wYtfIwLRE%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=81f88b70&idc=my" alt="Avatar do perfil">
+           <h1>Maree Ezra</h1>
+           <span class="profile-role">cartas de amor</span>
+       </header>
+       <hr>
+       <section class="profile-bio">
+           <p>
+               deixe-me colocar flores no seu cabelo. ontem à noite, sonhei que estava traçando seu nariz com meu dedo. acordei me sentindo como se tivesse sido arrancada de um pedaço de mim.
+               deixa pra lá. posso ler sua palma, meu amor? acho que isso significa que vamos ficar juntos por muito tempo. sim, estou inventando.
+               eu só quero segurar sua mão. sente-se aqui um pouco. vou consertar tudo.
+           </p>
+           <p>
+               a primeira vez que te conheci, tudo parecia muito mais bonito. ao seu redor tudo está á florescer e se colorir, como flores desabrochando em um jardim cheio de 幸福. os pássaros cantavam mais suavemente enquato o vento sopravas, acalmando o coração mais do que o 𝗇𝗈𝗋𝗆𝖺𝗅. oh, como o 世界 parece parar naquele dia só para dar lugar ao seu charme.
+           </p>
+           <p>
+               Você tem os olhos mais lindos que já vi, e sei que pensa o mesmo. Porque sua boca não para de falar sobre como o mundo é lindo através dos seus olhos. Fico feliz que você gaste seu tempo procurando a beleza deste mundo; por favor, continue procurando no céu e me envie cartas sobre isso através da lua ou das estrelas. No entanto, você não me envia nenhuma.
+
+           </p>
+           <center>
+           <ul type="none">
+               <li></li>
+               <li>  </li>
+               <li> </li>
+           </ul>
+           </center>
+       </section>`;
+            divBox.innerHTML = content
+            divBox.classList.add("expandir")
+        })
+    </script>
+</body>
+</html>
